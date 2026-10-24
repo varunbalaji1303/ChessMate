@@ -1,0 +1,11 @@
+# Expected physical position after Team 2 has commanded a robot move.
+string expected_fen
+# Reject observations older than this. A value <= 0 uses the server default.
+float32 maximum_age_seconds
+# Usually zero. Increase only for explicitly tolerated perception failures.
+uint32 maximum_mismatches
+---
+bool success
+string[] mismatched_squares
+float32 observation_age_seconds
+string message

@@ -1,0 +1,28 @@
+[board]
+output_size_px = 800
+files = "abcdefgh"
+ranks = "87654321"
+
+[aruco]
+dictionary = "DICT_4X4_50"
+
+# OpenCV canonical marker corner indices:
+# 0=top-left, 1=top-right, 2=bottom-right, 3=bottom-left.
+# These defaults assume each marker is aligned with the board and placed just
+# outside the corresponding corner.
+
+[aruco.top_left]
+id = 0
+inner_corner_index = 2
+
+[aruco.top_right]
+id = 1
+inner_corner_index = 3
+
+[aruco.bottom_right]
+id = 2
+inner_corner_index = 0
+
+[aruco.bottom_left]
+id = 3
+inner_corner_index = 1
